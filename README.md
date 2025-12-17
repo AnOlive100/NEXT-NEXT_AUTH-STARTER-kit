@@ -1,8 +1,8 @@
 # 🔐 NextAuth.js Starter Kit
 
-> **Production-ready authentication system with Google & GitHub OAuth, Role-Based Access Control, and beautiful UI**
+> **Production-ready authentication system with Google & GitHub OAuth and beautiful UI**
 
-A complete Next.js 15 authentication starter kit built with NextAuth.js, featuring social login, protected routes, and an admin dashboard. Perfect for SaaS applications, dashboards, and any project requiring user authentication.
+A complete Next.js 15 authentication starter kit built with NextAuth.js, featuring social login, protected routes, and a beautiful dashboard. Perfect for SaaS applications, landing pages, and any project requiring user authentication.
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
@@ -21,20 +21,19 @@ A complete Next.js 15 authentication starter kit built with NextAuth.js, featuri
 - ✅ Custom login & error pages
 - ✅ Email/Password ready (commented code included)
 
-### 🛡️ **Authorization (RBAC)**
-- ✅ USER and ADMIN roles
-- ✅ Role-based route protection via middleware
-- ✅ Conditional UI based on user role
-- ✅ Protected dashboard & admin pages
+### 🛡️ **Route Protection**
+- ✅ Protected dashboard route
+- ✅ Middleware-based authentication
+- ✅ Automatic redirects for unauthorized access
+- ✅ Session persistence
 
 ### 🎨 **UI/UX**
 - ✅ Beautiful dark-themed landing page
 - ✅ Professional login page with loading states
-- ✅ User dashboard with stats & welcome cards
-- ✅ Admin dashboard with management features
-- ✅ User dropdown navigation with role badges
+- ✅ User dashboard with welcome cards
+- ✅ User dropdown navigation
 - ✅ Fully responsive design
-- ✅ Smooth animations & transitions
+- ✅ Smooth animations & glassmorphism effects
 
 ### 👨‍💻 **Developer Experience**
 - ✅ **Extensive beginner-friendly comments**
@@ -58,8 +57,8 @@ A complete Next.js 15 authentication starter kit built with NextAuth.js, featuri
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
-cd nextauth-starter-kit
+git clone https://github.com/Nexoraedge/NEXT-NEXT_AUTH-STARTER-kit.git
+cd NEXT-NEXT_AUTH-STARTER-kit
 
 # Install dependencies
 npm install
@@ -130,7 +129,6 @@ src/
 │   │   ├── login/page.tsx               # Login page
 │   │   └── error/page.tsx               # Error page
 │   ├── dashboard/page.tsx               # User dashboard
-│   ├── admin/page.tsx                   # Admin dashboard (ADMIN only)
 │   ├── layout.tsx                       # Root layout with Providers
 │   ├── page.tsx                         # Landing page
 │   └── globals.css                      # Global styles
@@ -152,15 +150,14 @@ src/
 ### `src/lib/auth.ts` - The Heart of Authentication
 This file contains:
 - **Provider Toggle Section** - Easy enable/disable for Google/GitHub
-- **Role Assignment Logic** - Multiple options for testing ADMIN role
 - **Session Extension** - Adds `id` and `role` to user session
 - **Extensive Comments** - Step-by-step explanations
 
 ### `src/middleware.ts` - Route Protection
-Protects routes based on authentication and role:
+Protects routes based on authentication:
 - `/dashboard` - All authenticated users ✅
-- `/admin` - ADMIN role only ✅
 - `/settings` - All authenticated users ✅
+- Redirects to `/auth/login` if not authenticated
 
 ---
 
@@ -184,50 +181,41 @@ const providers = [
 ]
 ```
 
-### Assign ADMIN Role
-
-**Option 1: Hardcode for testing**
-```typescript
-// In src/lib/auth.ts, jwt callback
-token.role = "ADMIN" // Everyone is admin
-```
-
-**Option 2: Check email**
-```typescript
-if (user.email === "admin@example.com") {
-  token.role = "ADMIN"
-} else {
-  token.role = "USER"
-}
-```
-
-**Option 3: Database lookup** (requires database setup)
-```typescript
-const dbUser = await db.user.findUnique({ where: { email: user.email } })
-token.role = dbUser?.role ?? "USER"
-```
-
 ### Add Email/Password Authentication
 
-Follow the detailed instructions in `src/app/auth/login/page.tsx` (lines 55-110)
+Follow the detailed instructions in `src/app/auth/login/page.tsx` (commented section)
+
+### Customize the Landing Page
+
+Edit `src/app/page.tsx` to match your brand:
+- Update profile information
+- Change card links
+- Modify color scheme
+- Add your own content
 
 ---
 
 ## 🧪 Testing
 
-### Test USER Role (Default)
-1. Login with Google/GitHub
-2. Access `/dashboard` ✅ Should work
-3. Access `/admin` ❌ Should redirect to dashboard
-4. User dropdown should NOT show "Admin Dashboard" link
+### Test Authentication Flow
+1. Navigate to `http://localhost:3000`
+2. Click "Sign In" button
+3. Choose Google or GitHub
+4. Complete OAuth flow
+5. You'll be redirected to `/dashboard`
+6. Verify user info displays correctly
 
-### Test ADMIN Role
-1. Update `src/lib/auth.ts` to assign ADMIN role (see Customization Guide)
-2. Restart dev server
-3. Login again
-4. Access `/dashboard` ✅ Should work
-5. Access `/admin` ✅ Should work
-6. User dropdown SHOULD show "Admin Dashboard" link
+### Test Protected Routes
+1. While logged out, try accessing `/dashboard`
+2. Should redirect to `/auth/login` ✅
+3. After login, access `/dashboard`
+4. Should display your dashboard ✅
+
+### Test Sign Out
+1. Click user avatar in top right
+2. Click "Sign out"
+3. Should redirect to `/auth/login`
+4. Cannot access `/dashboard` anymore ✅
 
 ---
 
@@ -274,6 +262,19 @@ Works on any platform that supports Next.js:
 - [Next.js Docs](https://nextjs.org/docs)
 - [Tailwind CSS Docs](https://tailwindcss.com/docs)
 - [Shadcn/UI Docs](https://ui.shadcn.com/)
+
+---
+
+## 🎨 Screenshots
+
+### Landing Page
+Beautiful dark-themed landing page with glassmorphism effects
+
+### Login Page
+Professional OAuth login with Google and GitHub
+
+### Dashboard
+Clean, modern dashboard with user information and getting started guide
 
 ---
 
@@ -331,7 +332,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **DhoniDev-Ai**
 - YouTube: [@Dhonidev-ai](https://youtube.com/@Dhonidev-ai/)
-- GitHub: [@DhoniDevAi](https://github.com/DhoniDevAi)
+- GitHub: [@Nexoraedge](https://github.com/Nexoraedge)
 - Twitter: [@DhoniDevAi](https://twitter.com/DhoniDevAi)
 
 ---
@@ -340,6 +341,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ Star this repo if it helped you!**
 
-Made with ❤️ by [DhoniDev-Ai](https://github.com/DhoniDevAi)
+Made with ❤️ by [DhoniDev-Ai](https://github.com/Nexoraedge)
 
 </div>
