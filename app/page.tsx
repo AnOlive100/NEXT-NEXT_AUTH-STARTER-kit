@@ -63,7 +63,7 @@ export default function Page() {
           {/* YouTube - large card */}
           <div className="w-full md:w-2/3 p-2">
             <a
-              href="https://youtube.com"
+              href="https://youtube.com/@Dhonidev-ai/"
               target="_blank"
               rel="noreferrer"
               className="relative block overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl px-5 py-5 md:p-6 h-full transform transition duration-200 hover:-translate-y-1 hover:scale-[1.01] shadow-[0_0_0_rgba(0,0,0,0)] hover:shadow-[0_0_45px_rgba(248,113,113,0.45)]"
@@ -109,11 +109,13 @@ export default function Page() {
           {/* ToneGenie (Tool) */}
           <div className="w-full md:w-1/3 p-2">
             <a
-              href="#tonegenie"
+              href="https://tone-genie.vercel.app"
+              target="_blank"
+              rel="noreferrer"
               className="block rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl px-4 py-4 md:px-5 md:py-6 h-full transform transition duration-200 hover:-translate-y-1 hover:scale-[1.01] hover:shadow-[0_0_40px_rgba(56,189,248,0.45)]"
             >
               <div className="flex items-center mb-3">
-                <div className="h-9 w-9 rounded-xl bg-[#020617]/80 flex items-center justify-center border border-cyan-400/60 shadow-[0_0_22px_rgba(56,189,248,0.8)] mr-3">
+                <div className="h-9 w-9 rounded-xl bg-[#020617]/80 flex items-center justify-center border border-cyan-400/60 shadow-[0_0_15px_rgba(56,189,248,0.8)] mr-3">
                   <Wand2 className="h-4 w-4 text-cyan-300" />
                 </div>
                 <div>
@@ -169,13 +171,13 @@ export default function Page() {
           {/* Support CTA */}
           <div className="w-full md:w-1/2 p-2">
             <a
-              href="https://www.buymeacoffee.com"
+              href="https://youtube-snippets.vercel.app/payment"
               target="_blank"
               rel="noreferrer"
               className="block rounded-2xl border border-emerald-400/70 bg-linear-to-br from-emerald-500/25 via-[#020617] to-emerald-500/15 backdrop-blur-xl px-4 py-4 md:px-5 md:py-6 h-full transform transition duration-200 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_0_45px_rgba(52,211,153,0.7)]"
             >
               <div className="flex items-center mb-3">
-                <div className="h-9 w-9 rounded-xl bg-[#022c22]/80 flex items-center justify-center border border-emerald-300/70 shadow-[0_0_22px_rgba(52,211,153,0.9)] mr-3">
+                <div className="h-9 w-9 rounded-xl bg-[#022c22]/80 flex items-center justify-center border border-emerald-300/70 shadow-[0_0_12px_rgba(52,211,153,0.9)] mr-3">
                   <Coffee className="h-4 w-4 text-emerald-100" />
                 </div>
                 <div>
