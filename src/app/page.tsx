@@ -62,7 +62,7 @@ export default function Page() {
               <Link href="/auth/login">
                 <Button
                   variant="outline"
-                  className="border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 text-slate-100"
+                  className="border-white/10 bg-white/5 backdrop-blur-sm cursor-pointer hover:bg-white/80 text-slate-100 "
                 >
                   <LogIn className="h-4 w-4 mr-2" />
                   Sign In

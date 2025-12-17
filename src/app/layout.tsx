@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DhoniDev-Ai | Full Stack AI Developer",
-  description: "Full Stack AI Developer crafting smart products & frictionless experiences. Watch dev logs, AI builds & breakdowns on YouTube.",
-  keywords: ["AI Developer", "Full Stack Developer", "AI Products", "YouTube", "ToneGenie", "Next.js"],
+  title: "NextAuth Starter Kit | Production-Ready Authentication",
+  description: "Production-ready Next.js 15 authentication starter kit with Google & GitHub OAuth, protected routes, and beautiful UI. Built with TypeScript and Tailwind CSS.",
+  keywords: ["NextAuth", "Next.js", "Authentication", "OAuth", "TypeScript", "Tailwind CSS", "Starter Kit", "Google Login", "GitHub Login"],
   authors: [{ name: "DhoniDev-Ai" }],
   openGraph: {
-    title: "DhoniDev-Ai | Full Stack AI Developer",
-    description: "Full Stack AI Developer crafting smart products & frictionless experiences.",
+    title: "NextAuth Starter Kit | Production-Ready Authentication",
+    description: "Production-ready Next.js 15 authentication starter kit with Google & GitHub OAuth, protected routes, and beautiful UI.",
     type: "website",
   },
 };
