@@ -1,10 +1,15 @@
 "use client";
 
-import { Youtube, Sparkles, Wand2, Coffee, ArrowUpRight } from "lucide-react";
+import { Youtube, Sparkles, Wand2, Coffee, ArrowUpRight, LogIn } from "lucide-react";
+import { useSession } from "next-auth/react";
+import Link from "next/link";
+import { UserAccountNav } from "@/components/UserAccountNav";
+import { Button } from "@/components/ui/button";
 
 export default function Page() {
+  const { data: session } = useSession();
   return (
-    <main className="max-h-screen bg-[#050505] text-slate-100 flex items-center justify-center px-4 py-10">
+    <main className="h-screen  text-slate-100 flex items-center justify-center px-4 py-10">
       {/* Ambient background */}
       <div className="pointer-events-none fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.18),transparent_60%),radial-gradient(circle_at_bottom,rgba(236,72,153,0.2),transparent_60%)] opacity-80" />
@@ -47,14 +52,23 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Quick meta */}
-          <div className="mt-4 md:mt-0 flex md:justify-end">
-            <div className="px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm flex items-center">
-              <Sparkles className="h-3.5 w-3.5 text-amber-300 mr-1.5" />
-              <span className="text-xs md:text-sm text-slate-300/80">
-                Building AI-native products
-              </span>
-            </div>
+          {/* Auth Section - Login button or User Nav */}
+          <div className="mt-4 md:mt-0 flex md:justify-end items-center">
+            {session ? (
+              // Show user account nav when logged in
+              <UserAccountNav />
+            ) : (
+              // Show login button when not logged in
+              <Link href="/auth/login">
+                <Button
+                  variant="outline"
+                  className="border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 text-slate-100"
+                >
+                  <LogIn className="h-4 w-4 mr-2" />
+                  Sign In
+                </Button>
+              </Link>
+            )}
           </div>
         </header>
 
