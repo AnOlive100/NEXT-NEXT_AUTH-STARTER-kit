@@ -9,6 +9,12 @@ A complete Next.js 15 authentication starter kit built with NextAuth.js, featuri
 [![NextAuth.js](https://img.shields.io/badge/NextAuth.js-4.24-purple?style=for-the-badge)](https://next-auth.js.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38bdf8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
+<div align="center">
+
+**[🚀 Quick Start](#-quick-start) • [🚢 Deployment](#-deployment) • [📚 Documentation](#-documentation) • [☕ Support](#-support-the-work)**
+
+</div>
+
 ---
 
 ## ✨ Features
