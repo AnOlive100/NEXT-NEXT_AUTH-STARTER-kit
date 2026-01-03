@@ -2,7 +2,7 @@
 
 > **Production-ready authentication system with Google & GitHub OAuth and beautiful UI**
 
-A complete Next.js 15 authentication starter kit built with NextAuth.js, featuring social login, protected routes, and a beautiful dashboard. Perfect for SaaS applications, landing pages, and any project requiring user authentication.
+A complete Next.js 16 authentication starter kit built with NextAuth.js, featuring social login, protected routes, and a beautiful dashboard. Perfect for SaaS applications, landing pages, and any project requiring user authentication.
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
@@ -251,10 +251,10 @@ Works on any platform that supports Next.js:
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 15 (App Router)
-- **Authentication**: NextAuth.js v4
+- **Framework**: Next.js 16 (App Router)
+- **Authentication**: NextAuth.js 
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS v4
+- **Styling**: Tailwind CSS 
 - **UI Components**: Shadcn/UI (Radix UI)
 - **Icons**: Lucide React
 - **Validation**: Zod
